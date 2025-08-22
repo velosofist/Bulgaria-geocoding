@@ -6,7 +6,7 @@ This is a collection of resources that should help anyone working with geocoding
 
 Note from the creator of [the current fork](https://github.com/velosofist/Bulgaria-geocoding-kml)
 ------------------
-I don't make any claims of accuracy and relevancy of the included data, as the [original repository](https://github.com/yurukov/Bulgaria-geocoding) was mostly maintained in the years 2015-2016. The province names in /kml/provincesnames.kml were added by me based on [this document](https://www.nsi.bg/file/23721/ATTD_RB_2021_3IUPDJ1.pdf) from the National Statistical Institute. 
+I don't make any claims of accuracy and relevancy of the included data, as the [original repository](https://github.com/yurukov/Bulgaria-geocoding) was mostly maintained in the years 2015-2016. The province names in /kml/provinces_names.kml were added by me based on [this document](https://www.nsi.bg/file/23721/ATTD_RB_2021_3IUPDJ1.pdf) from the National Statistical Institute. 
 
 Conversion into KML
 ------------------
