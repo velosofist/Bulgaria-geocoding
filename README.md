@@ -96,3 +96,11 @@ Locations of all RES power plants connected to the grid until Dec 2013. In Bulga
 NSI/Ekatte
 ------------------
 Original documentation and reference tables for the Ekatte coding system by the National statistics institute
+
+Conversion into KML
+------------------
+[GeoJson.io](https://geojson.io) and [Google My Maps](https://mymaps.google.com) used for conversion and formatting.
+A clean-up of the formatting is then needed to remove unnecessary duplicate descriptions with some regexes, e.g. in VSCode's find-and-replace:
+- `.*CDATA.*\n` -> blank
+- `.*styleUrl.*\n` -> blank
+- `.*<Style id[\s\S\n]*?</StyleMap>.*\n` -> blank
