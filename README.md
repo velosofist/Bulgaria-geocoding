@@ -3,6 +3,19 @@ Geocoding resources for Bulgaria
 
 This is a collection of resources that should help anyone working with geocoding or mapping data in Bulgaria.
 
+
+Note from the creator of [the current fork](https://github.com/velosofist/Bulgaria-geocoding-kml)
+------------------
+I don't make any claims of accuracy and relevancy of the included data, as the [original repository](https://github.com/yurukov/Bulgaria-geocoding) was mostly maintained in the years 2015-2016. The province names in /kml/provincesnames.kml were added by me based on [this document](https://www.nsi.bg/file/23721/ATTD_RB_2021_3IUPDJ1.pdf) from the National Statistical Institute. 
+
+Conversion into KML
+------------------
+[GeoJson.io](https://geojson.io) and [Google My Maps](https://mymaps.google.com) used for conversion and formatting.
+A clean-up of the formatting is then needed to remove unnecessary duplicate descriptions with some regexes, e.g. in VSCode's find-and-replace:
+- `.*CDATA.*\n` -> blank
+- `.*styleUrl.*\n` -> blank
+- `.*<Style id[\s\S\n]*?</StyleMap>.*\n` -> blank
+
 municipalities.csv
 ------------------
 A list with all municipalities
@@ -96,11 +109,3 @@ Locations of all RES power plants connected to the grid until Dec 2013. In Bulga
 NSI/Ekatte
 ------------------
 Original documentation and reference tables for the Ekatte coding system by the National statistics institute
-
-Conversion into KML
-------------------
-[GeoJson.io](https://geojson.io) and [Google My Maps](https://mymaps.google.com) used for conversion and formatting.
-A clean-up of the formatting is then needed to remove unnecessary duplicate descriptions with some regexes, e.g. in VSCode's find-and-replace:
-- `.*CDATA.*\n` -> blank
-- `.*styleUrl.*\n` -> blank
-- `.*<Style id[\s\S\n]*?</StyleMap>.*\n` -> blank
